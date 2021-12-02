@@ -2,10 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const furBabies = [
-  { id: 1, name: "Fur Babies1", description: "desc 1" },
-  { id: 2, name: "Fur Babies2", description: "desc 2" },
-];
 
 const Pets = () => {
   const [pets, setPets] = useState([]);
@@ -18,7 +14,7 @@ const Pets = () => {
       let result = await axios.get("/api/pets");
       setPets(result.data);
     } catch (err) {
-      setPets(furBabies);
+      alert("TODO: ERROR IN UI")
     }
   };
   const deletePet = async (id) => {
@@ -26,7 +22,7 @@ const Pets = () => {
       await axios.delete(`/api/pets/${id}`);
       setPets(pets.filter((p) => p.id !== id));
     } catch (err) {
-      setPets(pets.filter((p) => p.id !== id));
+      alert("Error occured deleting")
     }
   };
   const renderPets = () => {
