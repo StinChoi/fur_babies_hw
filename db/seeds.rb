@@ -8,6 +8,8 @@
 
 fur1 = Pet.create(name: "Penelope", description: "Cat")
 fur2 = Pet.create(name: "Smalls", description: "Dog")
+fur1 = Pet.create(name: "Ginger", description: "Kitten")
+fur2 = Pet.create(name: "Coco", description: "Puppy")
 
 
 fur1.foods.create(name: "Orijen", price: 26.99)
