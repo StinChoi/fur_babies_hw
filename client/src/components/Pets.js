@@ -31,8 +31,9 @@ const Pets = () => {
         <div>
           <h1>{pet.name}</h1>
           <h1>{pet.description}</h1>
-          <button onClick={() => deletePet(pet.id)}>delete</button>
-          <Link to={{ pathname: `/pets/${pet.id}/edit`, pet: pet, y: 1 }}>Edit</Link>
+          <button onClick={() => deletePet(pet.id)}>Delete</button>
+          <Link to={`/pets/${pet.id}/edit`} state={{ pet, y: 1 }}>Edit</Link>
+          <Link to={`/pets/${pet.id}/foods`} state={{ pet }}>Show</Link>
         </div>
       );
     });
