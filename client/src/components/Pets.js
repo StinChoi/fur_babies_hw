@@ -25,6 +25,7 @@ const Pets = () => {
       alert("Error occured deleting")
     }
   };
+  // How could I make this a key prop?
   const renderPets = () => {
     return pets.map((pet) => {
       return (

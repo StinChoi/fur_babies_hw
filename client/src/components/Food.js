@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 
 const Food = (props) => {
   const { name, price, id, pet_id } = props;
