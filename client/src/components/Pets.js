@@ -33,6 +33,7 @@ const Pets = () => {
           <h1>{pet.description}</h1>
           <button onClick={() => deletePet(pet.id)}>Delete</button>
           <Link to={`/pets/${pet.id}/edit`} state={{ pet, y: 1 }}>Edit</Link>
+
           <Link to={`/pets/${pet.id}/foods`} state={{ pet }}>Show</Link>
         </div>
       );
@@ -40,7 +41,7 @@ const Pets = () => {
   };
   return (
     <div>
-      <h1>Pets</h1>
+      <h1>Welcome to Furry Babies!</h1>
       <Link to="/pets/new">New Pet</Link>
       {renderPets()}
     </div>

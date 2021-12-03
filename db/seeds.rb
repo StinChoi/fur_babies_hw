@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Pet.destroy_all
+
 fur1 = Pet.create(name: "Penelope", description: "Cat")
 fur2 = Pet.create(name: "Smalls", description: "Dog")
 fur1 = Pet.create(name: "Ginger", description: "Kitten")
@@ -19,3 +21,5 @@ fur2.foods.create(name: "Acana", price: 39.99)
 
 Store.create(name: "Fur Babies", city: "Rancho Bernardo", state: "CA")
 Store.create(name: "Pawlicious", city: "San Marcos", state: "CA")
+
+

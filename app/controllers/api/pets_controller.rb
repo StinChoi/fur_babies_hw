@@ -30,6 +30,10 @@ class Api::PetsController < ApplicationController
     render json: @pet.destroy
   end
 
+    def pets 
+      render json: Pet.all.order(:id)
+    end
+    
   private
 
   def set_pet
