@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :pets do
-      resources :foods 
+      resources :food 
 end
     resources :stores
   end

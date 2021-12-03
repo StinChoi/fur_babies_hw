@@ -14,10 +14,10 @@ fur1 = Pet.create(name: "Ginger", description: "Kitten")
 fur2 = Pet.create(name: "Coco", description: "Puppy")
 
 
-fur1.foods.create(name: "Orijen", price: 26.99)
-fur2.foods.create(name: "Blue Buffalo", price: 36.99)
-fur1.foods.create(name: "Taste of the Wild", price: 19.99)
-fur2.foods.create(name: "Acana", price: 39.99)
+fur1.food.create(name: "Orijen", price: 26.99)
+fur2.food.create(name: "Blue Buffalo", price: 36.99)
+fur1.food.create(name: "Taste of the Wild", price: 19.99)
+fur2.food.create(name: "Acana", price: 39.99)
 
 Store.create(name: "Fur Babies", city: "Rancho Bernardo", state: "CA")
 Store.create(name: "Pawlicious", city: "San Marcos", state: "CA")

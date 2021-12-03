@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router";
 import Pets from "./components/Pets"
 import About from "./components/About";
 import PetForm from "./components/PetForm";
+import PetFood from "./components/PetFood";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/pets" element={<Pets />} />
+        <Route path="/pets/:id/food" element={<PetFood />} />
         <Route path="/pets/new" element={<PetForm />} />
         <Route path="/pets/:id/edit" element={<PetForm />} />
         <Route path="/about" element={<About />} />
